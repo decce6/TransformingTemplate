@@ -1,7 +1,7 @@
 package me.decce.examplemod.fabric;
 
 //? if fabric {
-/*import me.decce.examplemod.ExampleMod;
+import me.decce.examplemod.ExampleMod;
 import net.fabricmc.api.ModInitializer;
 
 public class FabricEntrypoint implements ModInitializer {
@@ -10,4 +10,4 @@ public class FabricEntrypoint implements ModInitializer {
         ExampleMod.init();
     }
 }
-*///?}
+//?}

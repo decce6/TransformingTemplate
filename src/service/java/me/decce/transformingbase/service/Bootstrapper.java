@@ -3,6 +3,7 @@ package me.decce.transformingbase.service;
 import me.decce.transformingbase.constants.Constants;
 import me.decce.transformingbase.instrumentation.AgentLoader;
 import me.decce.transformingbase.transform.TransformationHelper;
+import me.decce.transformingbase.transform.TransformerDefinition;
 import net.lenni0451.reflect.Agents;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -36,8 +37,8 @@ public class Bootstrapper {
 
         helper.setup(getInstrumentation(), false, true
                 //? if fabric {
-                /*, new TransformerDefinition("net.fabricmc.loader.impl.launch.knot.KnotClassDelegate", me.decce.transformingbase.service.fabric.KnotClassDelegateTransformer.class)
-                *///?}
+                , new TransformerDefinition("net.fabricmc.loader.impl.launch.knot.KnotClassDelegate", me.decce.transformingbase.service.fabric.KnotClassDelegateTransformer.class)
+                //?}
         );
 
         classLoaderHandler.close();

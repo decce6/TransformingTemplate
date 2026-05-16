@@ -1,7 +1,7 @@
 package me.decce.examplemod.neoforge;
 
 //? if neoforge {
-import me.decce.examplemod.ExampleMod;
+/*import me.decce.examplemod.ExampleMod;
 import me.decce.transformingbase.constants.Constants;
 import net.neoforged.fml.common.Mod;
 
@@ -11,4 +11,4 @@ public class NeoForgeEntrypoint {
         ExampleMod.init();
     }
 }
-//?}
+*///?}
