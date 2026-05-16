@@ -3,7 +3,7 @@ import net.fabricmc.loom.task.RemapJarTask
 
 plugins {
     id("me.decce.transformingbase.gradle.transformingbase-common-conventions")
-    id("fabric-loom") version "1.13-SNAPSHOT"
+    id("fabric-loom") version "1.16-SNAPSHOT"
     id("com.gradleup.shadow")
     id("me.modmuss50.mod-publish-plugin")
 }
@@ -16,7 +16,7 @@ val modSourceSet = sourceSets["mod-src"]
 dependencies {
     minecraft("com.mojang:minecraft:${prop("deps.minecraft")}")
     mappings(loom.officialMojangMappings())
-    modImplementation("net.fabricmc:fabric-loader:0.17.2")
+    modImplementation("net.fabricmc:fabric-loader:0.19.2")
 }
 
 tasks {
